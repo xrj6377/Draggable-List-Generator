@@ -1,0 +1,209 @@
+body {
+	background-color: #e6e6e6;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+#mainColumn {
+	width: 1200px;
+	height: 100%;
+	margin: auto;
+	box-shadow: 3px 3px black;
+}
+
+#mainColumn h1 {
+	font-size: 50px;
+}
+
+#twoListDiv {
+	padding-left: 114px;
+	display: flex;
+	column-gap: 166px;
+	min-height: 380px;
+}
+
+.codeSnippet {
+	width: 1000px;
+	margin: auto;
+	background-color: #59baa5;
+	padding-bottom: 5px;
+}
+
+#example1tab {
+	margin-top: 20px;
+	min-height: 300px;
+}
+
+.tab {
+	height: 43px;
+	margin: auto;
+	padding-left: 100px;
+}
+
+.tabBtn {
+	background-color: transparent;
+	float: left;
+	border: none;
+	cursor: pointer;
+	padding: 14px 16px;
+}
+
+.tabSelected {
+	background-color: #59baa5;
+}
+
+.tab button:hover {
+  	background-color: #66d4bc;
+}
+	
+xmp {
+	margin: 0px;
+	background-color: inherit;
+	font-size: 17px;
+}
+
+#tab1html {
+	display: none;
+}
+
+#tab1js {
+	display: none;
+}
+
+#tab1description {
+	display: block
+}
+
+#tab1js span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}	
+
+#tab1description span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}
+
+
+
+
+
+#mergeListDiv {
+	padding-left: 399px;
+}
+
+#example2tab {
+	margin-top: 20px;
+	min-height: 310px;
+}
+
+#tab2html {
+	display: none;
+}
+
+#tab2js {
+	display: none;
+}
+
+#tab2description {
+	display: block;
+}
+
+#tab2description span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}
+
+#tab2js span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}
+
+
+
+
+
+#styleListDiv {
+	padding-left: 399px;
+}
+
+#example3tab {
+	margin-top: 20px;
+	min-height: 250px;
+}
+
+#tab3html {
+	display: none;
+}
+
+#tab3js {
+	display: none;
+}
+
+#tab3description {
+	display: block;
+}
+
+#tab3description span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}
+
+#tab3js span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}
+
+#xmlFormat {
+	font-size: 10px;	
+}
+
+#example4tab {
+	margin-top: 20px;
+	min-height: 150px;
+}
+
+#tab4js {
+	display: none;
+}
+
+#tab4description {
+	display: block;
+}
+
+#tab4description span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}
+
+#tab4js span{
+	display: block;
+	font-size: 17px;
+	font-family: monospace;
+	white-space: pre;
+	padding-left: 10%;
+}

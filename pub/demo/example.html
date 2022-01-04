@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer type="text/javascript" src="./js/draggableListGenerator.js"></script>
+    <script defer type="text/javascript" src="./js/example.js"></script>
+    <link rel="stylesheet" href="./demo/example.css">
+</head>
+<body>
+	<div id='mainColumn'>
+		<h1>Examples</h1>
+		<h2>Basic Drag/Swap/Delete</h2>
+		<div id='twoListDiv'>
+			
+		</div>
+		<div id='example1tab'>
+			<div id='tab1'  class='tab'>
+				<button class='tabBtn tabSelected' onclick="clickTab(event)">Description</button>
+				<button class='tabBtn' onclick="clickTab(event)">HTML</button>
+				<button class='tabBtn' onclick="clickTab(event)">Javascript</button>	
+			</div>
+
+			<div id='tab1html' class='codeSnippet'>
+				<xmp>
+					<div id='twoListDiv'>
+			
+					</div>
+				</xmp>
+			</div>
+			<div id='tab1js' class='codeSnippet'>
+				<code>
+					<span>const dl1 = new DraggableListGenerator()</span>
+					<span>dl1.createList({parent: document.querySelector('#twoListDiv'),</span>
+					<span>		listName: 'CSC309 Section 1 Student List',</span>
+					<span>		entries: ['Mark', 'John', 'Tony', 'Tom', 'Zack', 'James'],</span>
+					<span>		background_color: '#347f94'})</span>
+					<span>dl1.enableDrag()</span>
+
+					<span>const dl2 = new DraggableListGenerator()</span>
+					<span>dl2.createList({parent: document.querySelector('#twoListDiv'),</span>
+					<span>		listName: 'CSC309 Section 2 Student List',</span>
+					<span>		entries: ['Viki', 'Raymond', 'John', 'Ben', 'Alex', 'Sam'],</span>
+					<span>		background_color: '#c8d8e4'})</span>
+					<span>dl2.enableDrag()</span>
+				</code>
+			</div>
+			<div id='tab1description' class='codeSnippet'>
+				<span>1. Create draggable list by specifying the parent element, listName, </span>
+				<span>   cellWidth/Height, entries, and background_color.</span>
+				<span>2. However, these parameters are all optional, with default values </span>
+				<span>   associated with all of them.</span>
+				<span>3. After a list has been created by the DraggableListGenerator, you </span>
+				<span>   can enable drag editing by calling the enableDrag() function.</span>
+				<span>4. You can swap list entires by dragging and dropping them on top of</span>
+				<span>   other draggable lists.</span>
+				<span>5. You can move a list entry to another draggable list by dropping it</span>
+				<span>   onto the add entry area located at the bottom of the draggable list.</span>
+				<span>6. You can also delete a list entry by dropping in onto the garbage icon.</span>
+			</div>
+		</div>
+
+
+
+
+
+		<h2>Merge/Unmerge of Entries' Content</h2>
+		<div id='mergeListDiv'>
+			
+		</div>
+		<div id='example2tab'>
+			<div id='tab2'  class='tab'>
+				<button class='tabBtn tabSelected' onclick="clickTab(event)">Description</button>
+				<button class='tabBtn' onclick="clickTab(event)">HTML</button>
+				<button class='tabBtn' onclick="clickTab(event)">Javascript</button>
+			</div>
+
+			<div id='tab2html' class='codeSnippet'>
+				<xmp>
+					<div id='mergeListDiv'>
+			
+					</div>
+				</xmp>
+			</div>
+			<div id='tab2js' class='codeSnippet'>
+				<code>
+					<span>const dl3 = new DraggableListGenerator()</span>
+					<span>dl3.createList({parent: document.querySelector('#mergeListDiv'),</span>
+					<span>		listName: 'CSC309 Study Partner Assignment',</span>
+					<span>		entries: ['Viki', 'Raymond', 'John', 'Ben', 'Alex', 'Sam'],</span>
+					<span> 	 	background_color: '#c8d8e4'})</span>
+					<span>dl3.enableDrag()</span>
+				</code>
+			</div>
+			<div id='tab2description' class='codeSnippet'>
+				<span>1. You merge the content of list entries together by dragging and waiting.</span>
+				<span>2. Start by dragging one of the entries (moved entry) that you want </span>
+				<span>   to merge onto the second entry (target entry) that you want to merge.</span>
+				<span>3. After 2.5 seconds, a prompt will show up indicating that merging could happen.</span>
+				<span>4. You can then release the mouse button to have the entires merged together, </span>
+				<span>   the merged entries are now considered as one entry and can be moved, swapped,</span>
+				<span>   or merged the same way.</span>
+				<span>5. When hovering over individual entry content, is opacity will change, indicating</span>
+				<span>   that they can be unmerged.</span>
+				<span>6. To unmerge previously merged content, click and hold the mouse button down on</span>
+				<span>   the target content that you want to unmerge, make sure not to move your mouse.</span>
+				<span>7. After 2.5 seconds, the target content will disappear and form a new list entry</span>
+				<span>   which you can drop before any list entries or toss it into the garbage to delete.</span>
+			</div>
+		</div>
+
+
+
+
+		
+		<h2>Entries Style Modification</h2>
+		<div id='styleListDiv'>
+			
+		</div>
+		<div id='example3tab'>
+			<div id='tab3'  class='tab'>
+				<button class='tabBtn tabSelected' onclick="clickTab(event)">Description</button>
+				<button class='tabBtn' onclick="clickTab(event)">HTML</button>
+				<button class='tabBtn' onclick="clickTab(event)">Javascript</button>
+			</div>
+
+			<div id='tab3html' class='codeSnippet'>
+				<xmp>
+					<div id='styleListDiv'>
+			
+					</div>
+				</xmp>
+			</div>
+			<div id='tab3js' class='codeSnippet'>
+				<code>
+					<span>const dl4 = new DraggableListGenerator()</span>
+					<span>dl4.createList({parent: document.querySelector('#styleListDiv'),</span>
+					<span>		listName: 'Different Style List',</span>
+					<span>		entries: ['Amaranth Pink', 'Ash Gray', </span>
+					<span> 	 	'Beau Blue', 'Bittersweet']})</span>
+					<span>dl4.changeStyle("font-weight: bold;")</span>
+					<span>dl4.changeStyle("backgroundColor: #F19CBB; color: #1F75FE", 0)</span>
+					<span>dl4.changeStyle("backgroundColor: #B2BEB5", 1)</span>
+					<span>dl4.changeStyle("backgroundColor: #BCD4E6", 2)</span>
+					<span>dl4.changeStyle("backgroundColor: #FE6F5E", 3)</span>
+				</code>
+			</div>
+			<div id='tab3description' class='codeSnippet'>
+				<span>1. You can change style of entries by calling function changeStyle(style, idx). </span>
+				<span>2. Styles are specified in the form of "styleName: styleValue"</span>
+				<span>3. You can change multiple styles at once by seperating them with ";"</span>
+				<span>4. You can specify which entry to change by specifying the index parameter.</span>
+				<span>5. The default value of -1 will apply the style change to all list entires.</span>
+			</div>
+		</div>
+
+
+
+		<h2>Saving Edited List</h2>
+		<xmp id='xmlFormat'>
+			<div style="width: 402px;">
+				<div>
+					<h3>Different Style List</h3>
+				</div>
+				<ul dragenabled="false" style="list-style: none; border: 1px solid black; padding: 0px; min-width: 402px;">
+					<li style="width: 400px; min-height: 50px; background-color: rgb(241, 156, 187); border: 1px solid black; font-weight: bold; color: rgb(31, 117, 254);">
+						<div class="textDiv">Amaranth Pink</div>
+					</li>
+					<li style="width: 400px; min-height: 50px; background-color: rgb(178, 190, 181); border: 1px solid black; font-weight: bold;">
+						<div class="textDiv">Ash Gray</div>
+					</li>
+					<li style="width: 400px; min-height: 50px; background-color: rgb(188, 212, 230); border: 1px solid black; font-weight: bold;">
+						<div class="textDiv">Beau Blue</div>
+					</li>
+					<li style="width: 400px; min-height: 50px; background-color: rgb(254, 111, 94); border: 1px solid black; font-weight: bold;">
+						<div class="textDiv">Bittersweet</div>
+					</li>
+				</ul>
+			</div>
+		</xmp>
+		<div id='example4tab'>
+			<div id='tab4'  class='tab'>
+				<button class='tabBtn tabSelected' onclick="clickTab(event)">Description</button>
+				<button class='tabBtn' onclick="clickTab(event)">Javascript</button>
+			</div>
+
+			<div id='tab4js' class='codeSnippet'>
+				<code>
+					<span>const listXML = dl4.convertToXML()</span>
+					<span>In somewhere else:</span>
+					<span>const dlx = new DraggableListGenerator()</span>
+					<span>const listCopy = dlx.createFromXMLString(dlx)</span>
+				</code>
+			</div>
+			<div id='tab4description' class='codeSnippet'>
+				<span>1. The above HTML is Different Style List from the example above converted</span>
+				<span>   into xml format, it can then be used to recreate the list.</span>
+				<span>2. To recreate the list, you can take the xml string and pass it as a parameter</span>
+				<span>   to function createFromXMLString(xmlString).</span>
+				<span>3. The function returns the recreation of the list as a DOM element.</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

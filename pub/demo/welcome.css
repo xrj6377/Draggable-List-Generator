@@ -1,0 +1,35 @@
+body {
+	background-color: #e6e6e6;
+}
+
+h1 { 
+	color: black;
+	margin-top: 300px;
+	font-family: "Great Vibes", cursive;
+	font-size: 100px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	text-align: center;
+}
+
+#github {
+	text-align: center;
+}
+
+#description {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+#github a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	border: 3px solid black;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: 3px;
+}
